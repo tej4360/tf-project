@@ -21,7 +21,7 @@ module "db_servers" {
 }
 
 module "eks" {
-  source             = "git::https://github.com/raghudevopsb72/tf-eks.git"
+  source             = "https://github.com/tej4360/tf-eks.git"
   ENV                = var.env
   eks_version        = 1.27
   PRIVATE_SUBNET_IDS = var.default_subnet
